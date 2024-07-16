@@ -16,6 +16,7 @@ import fourthpagebgImage from '../assets/fourthpagebgimage.svg'
 import fifthpagebgImage from '../assets/fifthpagebgimage.jpeg'
 import solanaPng from '../assets/solana.png'
 import mouseIcon from '../assets/mouseicon.png'
+import mousepng2 from '../assets/character2.png'
 import disclaimerImage from '../assets/disclamer image.svg'
 import firePng from '../assets/fire.png'
 import { useState } from 'react';
