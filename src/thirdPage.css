@@ -1,0 +1,45 @@
+
+/* Add your custom CSS below */
+.bungee-regular {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.grid-background {
+    background: black;
+    background: linear-gradient(black, #333);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+  }
+  
+  .text-outline {
+    color: white;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+  }
+  
+  .card {
+    border: 2px solid #fff;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero {
+    position: relative;
+  }
+  
+  .hero img {
+    width: 100%;
+  }
+  
+  .roadmap {
+    color: #00ff00;
+    text-shadow: 2px 2px 0 #ff0000;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }

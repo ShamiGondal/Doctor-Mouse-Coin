@@ -1,0 +1,272 @@
+
+@import url('https://fonts.googleapis.com/css2?family=YourCustomFont:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-family: sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(36,36,36,1) 100%);
+}
+
+.characters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.character {
+  width: 150px; /* Default larger width */
+  height: auto;
+  margin: 0 10px; /* Default larger margin */
+}
+
+.text-box {
+  background-color: #1a1a1a;
+  border: 2px solid #ff6500;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 90%; /* Adjust as needed */
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.smoking-character {
+  margin-right: 20px;
+}
+
+.smoking-character img {
+  width: 420px; /* Default larger width */
+  height: auto;
+}
+
+.text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: 10px; /* Adjust spacing between logo and text */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .character {
+    width: 120px; /* Adjusted width for medium screens */
+    margin: 0 8px; /* Adjusted margin for medium screens */
+  }
+
+  .smoking-character img {
+    width: 100px; /* Adjusted width for medium screens */
+  }
+
+  .text p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .character {
+    width: 100px; /* Adjusted width for smaller screens */
+    margin: 0 5px; /* Adjusted margin for smaller screens */
+  }
+
+  .smoking-character img {
+    width: 80px; /* Adjusted width for smaller screens */
+  }
+
+  .text-box {
+    flex-direction: column; /* Stack logo and text vertically on smaller screens */
+    text-align: center;
+    padding: 10px;
+  }
+
+  .text p {
+    font-size: 12px; /* Further adjust font size for smaller screens */
+    margin-left: 0; /* Remove margin between logo and text */
+    margin-top: 10px; /* Add margin above text */
+  }
+}
+
+/* type writer effecct*/
+/* Tailwind CSS classes */
+.animate-text-typewriter {
+  overflow: hidden; /* Ensure text doesn't overflow */
+  border-right: 0.15em solid white; /* Cursor effect */
+  white-space: nowrap; /* Keep text on one line */
+  margin: 0 auto; /* Center text horizontally */
+  letter-spacing: 0.15em; /* Adjust letter spacing for cursor effect */
+  animation: typewriter 4s steps(30, end), cursor-blink 0.5s step-end infinite alternate; /* Adjust timing and steps */
+}
+
+/* Custom CSS for animation */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor-blink {
+  from, to {
+    border-color: transparent; /* Blinking cursor effect */
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+
+
+.hexagon {
+  position: relative;
+  width: 200px; /* Adjust as needed */
+  height: 115px; /* Adjust as needed */
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  margin: 57.5px 0;
+  transform: rotateY(-15deg) rotateX(-15deg);
+  perspective: 1000px; /* Perspective for 3D effect */
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 100px solid transparent; /* Half of width */
+  border-right: 100px solid transparent; /* Half of width */
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 57.5px solid rgba(255, 255, 255, 0.2); /* Half of height */
+}
+
+.hexagon:after {
+  top: 100%;
+  border-top: 57.5px solid rgba(255, 255, 255, 0.2); /* Half of height */
+}
+
+.bg-custom-gradient {
+  background: linear-gradient(to bottom, #ec4899, #000);
+}
+
+
+.footer {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(48, 71, 97, 1) 100%);
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-icons a {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.2);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
+/*footer effects*/
+
+
+.image-3d {
+  transition: transform 0.3s;
+  transform: rotateY(-25deg) rotateX(-25deg);
+}
+
+
+
+.text-3d {
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 5px 5px 0px #000, 10px 10px 10px rgba(0, 0, 0, 0.5);
+  transform: rotateY(-35deg) rotateX(-35deg);
+  transition: transform 0.3s, text-shadow 0.3s;
+}
+
+
+.icon-3d{
+
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 5px 5px 0px #000, 10px 10px 10px rgba(0, 0, 0, 0.5);
+  transform: rotateY(-20deg) rotateX(-25deg);
+  transition: transform 0.3s, text-shadow 0.3s;
+}
+
+
+.discalimer-3d{
+
+  font-family: 'Press Start 2P', cursive;
+  transform: rotateY(-15deg) rotateX(-15deg);
+  transition: transform 0.3s, text-shadow 0.3s;
+}
+
+.disclaimer-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin: auto;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will ensure the image covers the entire container */
+  z-index: -1; /* Ensures the image is behind the text */
+}
+
+.disclaimer-text {
+  position: relative;
+  z-index: 1; /* Ensures the text is above the image */
+  padding: 1rem;
+  font-size: 0.65rem; /* Equivalent to text-xs */
+  font-family: 'Roboto Mono', monospace; /* Ensure you have this font loaded */
+  color: #D97706; /* Tailwind's yellow-400 color */
+  border-radius: 0.5rem; /* Optional: adds rounded corners */
+  margin: 1rem;
+}
