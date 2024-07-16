@@ -149,10 +149,10 @@ body {
 
 .hexagon {
   position: relative;
-  width: 200px; /* Adjust as needed */
-  height: 115px; /* Adjust as needed */
+  width: 210px; /* Adjust as needed */
+  height: 135px; /* Adjust as needed */
   background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-  margin: 57.5px 0;
+  margin: 61.5px 0;
   transform: rotateY(-15deg) rotateX(-15deg);
   perspective: 1000px; /* Perspective for 3D effect */
 }
@@ -269,4 +269,51 @@ body {
   color: #D97706; /* Tailwind's yellow-400 color */
   border-radius: 0.5rem; /* Optional: adds rounded corners */
   margin: 1rem;
+}
+
+/*buy now button*/
+.buy-now-button {
+  font-family: 'Poppins', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  margin-top: 20px;
+  color: #fff;
+  background: linear-gradient(145deg, #ff7e36, #ff5722);
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.1s, box-shadow 0.1s, background 0.3s;
+}
+
+.buy-now-button:active {
+  transform: translateY(5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.buy-now-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.buy-now-button img {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.buy-now-button:hover {
+  background: linear-gradient(145deg, #ff914c, #ff6a2d);
 }
