@@ -14,7 +14,6 @@ import BackgroundImagePage3 from '../assets/backgroundImagePage3.svg'
 import backgroundImage from '../assets/secondpageBgImage.svg'; // Ensure to provide the correct path
 import MousesIcon from '../assets/mousesIcons.png'; // Ensure to provide the correct path
 import doctormouseCircularAnimation from '../assets/doctormousecoinpresenting (2).png'; // Ensure to provide the correct path
-import characterImage5 from '../assets/characterpng8.png'; // Ensure to provide the correct path
 import characterImage6 from '../assets/characterpng7.png'; // Ensure to provide the correct path
 import teteCoinLogo from '../assets/coinImage.png';
 import fourthpagebgImage from '../assets/fourthpagebgimage.svg'
@@ -294,9 +293,6 @@ function DoctorMouseLandingPage() {
 
             </div>
 
-
-
-
             {/* fifth page 
     */}
 
@@ -305,10 +301,10 @@ function DoctorMouseLandingPage() {
                 style={{ backgroundImage: `url(${fifthpagebgImage})`, backgroundSize: 'cover' }}
             >
                 <div className="text-center text-white mt-10 p-3">
-                    <h1 className="text-4xl font-bold">HOW TO BUY $TETE</h1>
+                    <h1 className="text-4xl font-bold">HOW TO BUY $DRMOUSE</h1>
                     <div className="mt-4 flex justify-center items-center">
                         <p className="text-sm mt-2 bg-opacity-80 bg-gradient-to-r from-[#304761] to-[#d2d1d6] p-2 rounded">
-                            CERTIFICATE AUTHORITY: {certificateCode}
+                            CONTRACT ADDRESS: {certificateCode}
                         </p>
                         <button
                             onClick={copyToClipboard}
@@ -354,19 +350,19 @@ function DoctorMouseLandingPage() {
                         <div className="footer-icons flex flex-col items-center mt-5 space-y-4">
                             <div className="flex flex-row justify-center space-x-4 icon-3d">
                                 <a href="https://x.com/DrMouseCoin?t=4LV24L3j1VWhgtepFaDB3A&s=09" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faXTwitter} size="md" />
+                                    <FontAwesomeIcon icon={faXTwitter} size="3x" />
                                 </a>
                                 <a href="https://t.me/+Cv2pmIa9OI0wMDVh" target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faTelegram} size="lg" />
+                                    <FontAwesomeIcon icon={faTelegram} size="3x" />
                                 </a>
-                                <a href="https://solscan.io/token/EVS9EoZoxaYZnk8k7jCukfkgG8ZtiFwVtDHRLV4gy8Uz" target="_blank" rel="noopener noreferrer" >
-                                    <img src={solScanIcon} className='h-6 w-6'  ></img>
+                                <a href="https://solscan.io/token/EVS9EoZoxaYZnk8k7jCukfkgG8ZtiFwVtDHRLV4gy8Uz" target="_blank" rel="noopener noreferrer">
+                                    <img src={solScanIcon} className='h-16 w-16' />
                                 </a>
                                 <a href="https://dexscreener.com/solana/apgie2rbaezrlbo1yur8cpcav6zfuy6dzcy9yebtezfs" target="_blank" rel="noopener noreferrer">
-                                    <img src={dexScreenerIcon} className=' h-6 w-6' ></img>
+                                    <img src={dexScreenerIcon} className='h-16 w-16' />
                                 </a>
-
                             </div>
+
                             <p className="text-sm text-3d">© COPYRIGHT DOCTOR COIN 2024</p>
                             <img src={QRCodeButtom} alt="QR Code" className="w-40 h-40 mx-auto mb-2  image-3d" />
 
