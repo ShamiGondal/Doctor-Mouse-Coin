@@ -249,7 +249,7 @@ function DoctorMouseLandingPage() {
                         <img
                             src={characterImage6}
                             alt="Character"
-                            className="w-80 h-full object-cover opacity-80 transform scale-125 mt-32"
+                            className="w-80 h-full object-cover opacity-80 transform scale-125 mt-20"
                         />
                     </div>
                 </div>
